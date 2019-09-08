@@ -19,3 +19,30 @@ body {
 li{
   list-style-type: none;
 }
+figure{
+  text-align: center;
+}
+
+/* 헤더 */
+.header{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid silver;
+}
+/* 차후 모달창을 띄우기 위한 임시 설정 */
+.menu-list, .btn-menu-close{
+  display: none;
+}
+
+/* 버튼 속성 설정 */
+.btn-menu-open{
+  background-color: lightgray;
+  background-image: url('/images/navigation-button.gif');
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+}
+.btn-beverageinfo-detail-close{
+  background-image: url('/images/detail-close.gif');
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+}
