@@ -16,33 +16,39 @@ body {
   font-size: 1.4rem;
   font-family: 'Spoqa Han Sans', 'Sans-serif';
 }
-li{
-  list-style-type: none;
-}
-figure{
-  text-align: center;
-}
 
-/* 헤더 */
 .header{
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid silver;
 }
-/* 차후 모달창을 띄우기 위한 임시 설정 */
-.menu-list, .btn-menu-close{
+.btn-menu-open{
+  background: url('/images/navigation-button.gif') no-repeat, yellow;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  padding: 0;
+  border: 0;
+}
+.btn-menu-open:hover{
+  background: url('/images/navigation-button.gif') no-repeat, #eee;
+}
+.menu-pop{
   display: none;
 }
-
-/* 버튼 속성 설정 */
-.btn-menu-open{
-  background-color: lightgray;
-  background-image: url('/images/navigation-button.gif');
-  background-repeat: no-repeat;
-  /* background-size: cover; */
+.beverage-content{
+  list-style-type: none;
 }
-.btn-beverageinfo-detail-close{
-  background-image: url('/images/detail-close.gif');
-  background-repeat: no-repeat;
-  /* background-size: cover; */
+.beverage-content figure{
+  display: block;
+  width: 540px;
+  height: 520px;
+  text-align: center;
+  padding-top: 50px;
+}
+.beverageinfo-content{
+  display: none;
+}
+.beverageinfo-detail-list li{
+  display: flex;
+  justify-content: space-between;
 }
